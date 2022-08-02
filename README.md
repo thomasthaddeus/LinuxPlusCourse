@@ -7,7 +7,7 @@
 
 ---
 
-## Comptia Linux+ Learning Labs
+## Linux+ Learning Labs
 
 1. Instructions from the labs for viewing the material in a different format .
    - Easier on the eyes
