@@ -23,10 +23,11 @@
    - Sharing information from machine to machine
 3. Useful Tips based off of experience
 4. Images documentation
-   - `Debian`
+   - `Debian` 
+   - `Fedora` ![File System of Fedora](./img/Fedora%20distro.jpg)
    - `Ubuntu`
    - `Kali Linux`
-   - `Linux Mint`
+   - `Linux Mint` ![File System of Linux Mint](./img/LinuxMint%20distro.jpg)
    - `Redhat`
    - `CentOS`
 5. Instances in the Cloud
