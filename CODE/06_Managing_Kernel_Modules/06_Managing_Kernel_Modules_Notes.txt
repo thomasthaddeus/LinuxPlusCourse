@@ -1,0 +1,33 @@
+06.Managing Kernel Modules
+===================================
+Exploring the Linux Kernel
+---------------------------------
+3.	3.10
+4.	False
+5.	Sending service requests to the kernel.
+6.	Process management and Memory management
+7.	☑aoIt is the area of memory in which most high-level software runs. 
+	☑ It is the area of memory in which background processes and low-level system libraries run. 
+8.	Monolithic kernels are larger and consume more RAM.
+9.	True
+
+----------------------------------
+
+
+Installing and Configuring Kernel Modules
+------------------------------------------
+Answers may vary, but btusb.ko.xz is the most likely candidate.
+************************
+These are modules that btusb depends on in order to function. The modprobe command automatically installs dependent modules when necessary.
+
+---------------------------------------------
+
+
+Monitoring Kernel Modules
+------------------------------------------
+2.	Answers may vary, but the version used to develop this course was compiled on November 8th of 2018.
+3.	Answers may vary depending on when the kernel was compiled. For the kernel version used to develop this course, the GCC version is 4.8.5.
+4.	Answers may vary, but validating the kernel version and related information can help you diagnose issues that apply to specific versions,
+	such as incompatible software.
+7.	Don't forget to use the man pages to discover the meaning of the different options for commands. 
+	What is the meaning of the -H option for dmesg?

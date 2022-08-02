@@ -1,0 +1,34 @@
+
+Examine the tree structure. What can you identify about your storage devices
+Answers may vary depending on the underlying hardware, but generally, the system reserves sda1 and sda2 as boot file systems. The sda3 device is typically a logical volume group created by the system to house the root file system, the home file system, and swap space. Below that should be the two physical volumes that you created, and under each should be one or more logical volumes. Some of the logical volumes might extend across both physical volumes.
+
+Why was no file or directory found, when you were just in a directory with this name?
+This is because you referenced a relative path, which means Linux tried to open a directory called etc within the /etc/ssh directory.
+
+
+
+Link
+
+
+Essential command-line utilities.
+
+
+/proc
+
+
+/opt/myapp
+
+
+Answers may vary, but one example is: sudo du -h /backup/data
+
+
+Answers may vary, but you can compare the read and write statistics of the drive to see if they do or do not match a baseline of expected behavior. If they don't, the drive may be a bottleneck and causing sluggish system behavior when users and applications read from and write to storage.
+
+
+Answers may vary, but one example is ioping -c 100 /dev/backup/databk
+
+
+noop
+
+
+The user will be able to continue to exceed this soft limit for a default of seven days. If they go below the soft limit, the timer will reset. If they don't go below the soft limit within the grace period, or if they exceed the hard limit within the grace period, then they will be unable to write to the file system.

@@ -1,0 +1,43 @@
+```bash
+nmcli con down ens32
+nmcli device status
+nmcli con up ens32
+nmcli device status
+
+ip addr show ens32
+nmcli con edit ens32
+set ipv4.addresses 10.50.1.101/24
+
+    Press Enter to set ipv4.method to manual
+save
+quit
+nmcli con down ens32
+nmcli con up ens32
+ip addr show ens32
+
+ls /etc/sysconfig/network-scripts
+
+cat /etc/sysconfig/network-scripts/ifcfg-ens32
+
+sudo hostnamectl set-hostname server02 
+sudo systemctl restart systemd-hostnamed
+
+cat /etc/resolv.conf
+```
+----------------------------------------
+What are some of the potential benefits of virtualization?   
+	--Answers will vary. Virtualization can enable easy-to-revert environments; enable more efficient use of hardware; support on-demand availability; support quick starting and stopping of environments; offer better support for disaster recovery; and more.
+
+```bash
+cat /proc/cpuinfo | grep vmx
+cat /proc/cpuinfo | grep svm
+sudo yum -y install qemu-kvm qemu-img virt-manager libvirt libvirt-python libvirt-client virt-install virt-viewer bridge-utils librbd1 librbd1-devel libsolv
+
+sudo systemctl start libvirtd
+sudo systemctl enable libvirtd
+lsmod | grep kvm
+
+sudo virt-install --name=devtech-install --vcpus=1 --memory=2048 --cdrom=/opt/linuxplus/managing_networking/CentOS-7-x86_64-DVD-1810.iso --disk size=12 --os-variant=rhel7
+
+sudo virsh save devtech-install saved-vm
+```
