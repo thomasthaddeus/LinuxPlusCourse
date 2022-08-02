@@ -16,7 +16,7 @@
 ## TODO
 
 1. Arrange Folder Structure of Repository by Linux families ![Timeline of Linux families](./img/Linux%20timeline.png)
-   - Original Image from --> ![Timeline Credit](alphonse.png)
+   - Original Image from --> ![Timeline Credit](./img/alphonse.png)
 2. Instructions for best practices
    - `Regex`
    - `Bash Scripting`
